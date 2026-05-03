@@ -218,6 +218,35 @@ h3 {
   background: var(--soft);
 }
 
+.discovery {
+  background: #fff;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.insight {
+  display: grid;
+  gap: 10px;
+  padding: 24px;
+  border-left: 3px solid var(--brand);
+  background: var(--soft);
+}
+
+.insight span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.insight p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .band {
   padding: 92px 5vw;
   background: var(--soft);
@@ -257,6 +286,27 @@ h3 {
 .service-list strong {
   font-size: 21px;
   line-height: 1.35;
+}
+
+.checklist {
+  background: #fff;
+}
+
+.checklist__layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.checklist__block {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.checklist__block p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .contact {
@@ -360,7 +410,9 @@ h3 {
   }
 
   .grid,
-  .service-list {
+  .service-list,
+  .insight-grid,
+  .checklist__layout {
     grid-template-columns: 1fr;
   }
 
