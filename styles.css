@@ -124,6 +124,26 @@ h3 {
   font-size: 20px;
 }
 
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.hero-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(15, 107, 79, 0.2);
+  border-radius: 999px;
+  color: var(--brand-dark);
+  font-size: 15px;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.82);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +213,29 @@ h3 {
 
 .hero__panel-copy p {
   margin-bottom: 0;
+  color: var(--muted);
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.trust-strip div {
+  display: grid;
+  gap: 6px;
+  padding: 28px 5vw;
+  background: #fff;
+}
+
+.trust-strip strong {
+  color: var(--brand-dark);
+  font-size: 20px;
+}
+
+.trust-strip span {
   color: var(--muted);
 }
 
@@ -601,7 +644,8 @@ h3 {
 @media (max-width: 920px) {
   .hero,
   .contact,
-  .lead-form-section {
+  .lead-form-section,
+  .trust-strip {
     grid-template-columns: 1fr;
   }
 
