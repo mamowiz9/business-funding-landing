@@ -315,17 +315,23 @@ h3 {
 
 .case-band {
   background:
-    linear-gradient(180deg, rgba(9, 73, 52, 0.92), rgba(15, 107, 79, 0.88)),
+    linear-gradient(180deg, rgba(6, 45, 34, 0.96), rgba(8, 76, 55, 0.94)),
     url("https://images.pexels.com/photos/36003983/pexels-photo-36003983.jpeg?auto=compress&cs=tinysrgb&w=1600") center / cover;
   color: #fff;
 }
 
 .case-band .eyebrow {
-  color: #ffbd7c;
+  color: #ffd39d;
 }
 
 .case-band .section__heading p:not(.eyebrow) {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.96);
+  font-weight: 700;
+}
+
+.case-band .section__heading h2 {
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.32);
 }
 
 .case-grid {
