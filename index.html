@@ -15,6 +15,13 @@
       "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,"script","dataLayer","GTM-TWT5VQCW");
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GR7GSTVBN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-2GR7GSTVBN");
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -476,6 +483,12 @@
             track_name: trackName,
             link_url: element.href || ""
           });
+          if (typeof window.gtag === "function") {
+            window.gtag("event", eventMap[trackName] || "tracked_click", {
+              track_name: trackName,
+              link_url: element.href || ""
+            });
+          }
         });
       });
 
@@ -486,6 +499,11 @@
             event: "submit_lead_form",
             form_name: "business_funding_consultation"
           });
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "submit_lead_form", {
+              form_name: "business_funding_consultation"
+            });
+          }
         });
       }
     </script>
