@@ -144,6 +144,18 @@ h3 {
   background: rgba(255, 255, 255, 0.82);
 }
 
+.hero-tags--expanded {
+  max-width: 800px;
+  margin-top: 12px;
+}
+
+.hero-tags--expanded span {
+  border-color: rgba(207, 107, 47, 0.24);
+  color: var(--brand-dark);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -504,6 +516,62 @@ h3 {
   color: var(--muted);
 }
 
+.fleet-lease {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+  gap: 42px;
+  align-items: center;
+  background:
+    linear-gradient(115deg, rgba(244, 247, 245, 0.98), rgba(255, 255, 255, 0.92)),
+    url("https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1600") center / cover;
+}
+
+.fleet-lease__media {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.fleet-lease__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.fleet-lease__content {
+  max-width: 760px;
+}
+
+.fleet-lease__content p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.fleet-benefits {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.fleet-benefits div {
+  display: grid;
+  gap: 4px;
+  padding: 18px;
+  border: 1px solid rgba(15, 107, 79, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.fleet-benefits strong {
+  color: var(--brand-dark);
+  font-size: 18px;
+}
+
+.fleet-benefits span {
+  color: var(--muted);
+}
+
 .lead-form-section {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1fr);
@@ -660,6 +728,7 @@ h3 {
   .hero,
   .contact,
   .lead-form-section,
+  .fleet-lease,
   .trust-strip {
     grid-template-columns: 1fr;
   }
