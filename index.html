@@ -8,9 +8,24 @@
       name="description"
       content="協助公司、行號、店家、包商、工廠評估企業貸款、支票票貼、工程週轉金與營運週轉金需求。"
     />
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+      new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+      "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,"script","dataLayer","GTM-TWT5VQCW");
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TWT5VQCW"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe>
+    </noscript>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首頁">企業資金週轉諮詢</a>
       <nav class="nav" aria-label="頁面導覽">
@@ -438,5 +453,41 @@
     <a class="floating-line" href="https://line.me/ti/p/hI6-r26uJ2" data-track="line-floating-direct">
       加 LINE
     </a>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      var eventMap = {
+        "line-top": "click_line_top",
+        "line-business": "click_line_business",
+        "line-ticket": "click_line_ticket",
+        "line-project": "click_line_project",
+        "line-credit-alt": "click_line_credit_alt",
+        "line-footer": "click_line_footer",
+        "line-footer-direct": "click_line_footer_direct",
+        "line-floating-direct": "click_line_floating",
+        "line-fleet-lease": "click_fleet_lease"
+      };
+
+      document.querySelectorAll("[data-track]").forEach(function(element) {
+        element.addEventListener("click", function() {
+          var trackName = element.getAttribute("data-track");
+          window.dataLayer.push({
+            event: eventMap[trackName] || "tracked_click",
+            track_name: trackName,
+            link_url: element.href || ""
+          });
+        });
+      });
+
+      var leadForm = document.querySelector(".lead-form");
+      if (leadForm) {
+        leadForm.addEventListener("submit", function() {
+          window.dataLayer.push({
+            event: "submit_lead_form",
+            form_name: "business_funding_consultation"
+          });
+        });
+      }
+    </script>
   </body>
 </html>
