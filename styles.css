@@ -651,6 +651,65 @@ h3 {
   font-size: 18px;
 }
 
+.company-info {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 245, 0.98)),
+    url("https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1600") center / cover;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.company-card {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(25, 48, 36, 0.08);
+}
+
+.company-card span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.company-card strong {
+  color: var(--brand-dark);
+  font-size: 19px;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.company-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.privacy {
+  background: #fff;
+}
+
+.privacy-panel {
+  display: grid;
+  gap: 12px;
+  max-width: 960px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.privacy-panel p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .qr-card {
   padding: 18px;
   text-align: center;
@@ -743,7 +802,8 @@ h3 {
   .insight-grid,
   .case-grid,
   .signal-list,
-  .checklist__layout {
+  .checklist__layout,
+  .company-grid {
     grid-template-columns: 1fr;
   }
 
